@@ -53,7 +53,7 @@ remote func pre_inicio_juego():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	nivel = rng.randi_range(0, 3)
-	var jugador = load("res://Jugador/PrimeraPersona.tscn").instance()
+	var jugador = load("res://Jugador/PrimeraPersona.tscn")
 			
 	for j_id in jugadores:
 		print(str(j_id))
@@ -126,14 +126,10 @@ remote func post_inicio_juego():
 remote func juego_perdido():
 	rpc_id(get_tree().get_rpc_sender_id(), "juego_perdido")
 	get_tree().change_scene("res://Interfaz/PantallaDerrota.tscn")
-	if get_tree().is_network_server():
-		juego.queue_free()
 
 remote func juego_ganado():
 	rpc_id(get_tree().get_rpc_sender_id(), "juego_ganado")
 	get_tree().change_scene("res://Interfaz/PantallaVictoria.tscn")
-	if get_tree().is_network_server():
-		juego.queue_free()
 
 	
 remote func juego_listo(id):
