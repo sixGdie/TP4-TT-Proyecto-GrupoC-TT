@@ -23,8 +23,7 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-modulate = Color( 0.513726, 0.513726, 0.513726, 1 )
-self_modulate = Color( 0.815686, 0.815686, 0.815686, 1 )
+self_modulate = Color( 0.290196, 0.286275, 0.286275, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
@@ -34,85 +33,124 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Mapa_J2_D4" type="Sprite" parent="."]
-position = Vector2( 723.867, 540 )
-scale = Vector2( 1.92498, 1.61919 )
+[node name="Mapa_J2_D4" type="TextureRect" parent="TextureRect"]
+anchor_right = 0.762
+anchor_bottom = 0.994
+margin_right = -0.0400391
+margin_bottom = -0.52002
 texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Salir" type="Button" parent="."]
+[node name="Salir" type="Button" parent="TextureRect"]
 modulate = Color( 1, 1, 1, 0.498039 )
-anchor_left = 0.481
-anchor_top = 0.652
-anchor_right = 0.481
-anchor_bottom = 0.652
-margin_left = -227.068
-margin_top = 277.085
-margin_right = 320.932
-margin_bottom = 373.085
+anchor_left = 0.348
+anchor_top = 0.897
+anchor_right = 0.634
+anchor_bottom = 0.986
+margin_left = 0.291992
+margin_top = 0.485107
+margin_right = -0.828003
+margin_bottom = 0.36499
 custom_fonts/font = SubResource( 2 )
 text = "MENU PRINCIPAL"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-margin_left = 1518.99
-margin_top = 50.8802
-margin_right = 1742.99
-margin_bottom = 87.8802
+[node name="Label" type="Label" parent="TextureRect"]
+anchor_left = 0.791
+anchor_top = 0.047
+anchor_right = 0.908
+anchor_bottom = 0.081
+margin_left = 0.27002
+margin_top = 0.120197
+margin_right = -0.370117
+margin_bottom = 0.4002
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Aconcagua"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="."]
-margin_left = 1634.81
-margin_top = 209.46
-margin_right = 1858.81
-margin_bottom = 246.46
+[node name="Label2" type="Label" parent="TextureRect"]
+anchor_left = 0.851
+anchor_top = 0.194
+anchor_right = 0.968
+anchor_bottom = 0.265
+margin_left = 0.890015
+margin_top = -0.0599976
+margin_right = 0.25
+margin_bottom = 0.26001
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Linux
 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label3" type="Label" parent="."]
-margin_left = 1510.08
-margin_top = 366.258
-margin_right = 1734.08
-margin_bottom = 443.258
+[node name="Label3" type="Label" parent="TextureRect"]
+anchor_left = 0.786
+anchor_top = 0.339
+anchor_right = 0.903
+anchor_bottom = 0.41
+margin_left = 0.959961
+margin_top = 0.13797
+margin_right = 0.319824
+margin_bottom = 0.457977
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Buda"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label4" type="Label" parent="."]
-margin_left = 1634.81
-margin_top = 530.184
-margin_right = 1858.81
-margin_bottom = 607.184
+[node name="Label4" type="Label" parent="TextureRect"]
+anchor_left = 0.851
+anchor_top = 0.491
+anchor_right = 0.968
+anchor_bottom = 0.562
+margin_left = 0.890015
+margin_top = -0.0960083
+margin_right = 0.25
+margin_bottom = 0.223999
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Andorra"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label5" type="Label" parent="."]
-margin_left = 1515.43
-margin_top = 670.946
-margin_right = 1739.43
-margin_bottom = 747.946
+[node name="Label5" type="Label" parent="TextureRect"]
+anchor_left = 0.789
+anchor_top = 0.619
+anchor_right = 0.906
+anchor_bottom = 0.691
+margin_left = 0.549927
+margin_top = 0.537964
+margin_right = -0.0899658
+margin_bottom = -0.222046
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Tesla"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label6" type="Label" parent="."]
-margin_left = 1608.08
-margin_top = 776.072
-margin_right = 1832.08
-margin_bottom = 853.072
+[node name="Label6" type="Label" parent="TextureRect"]
+anchor_left = 0.838
+anchor_top = 0.719
+anchor_right = 0.954
+anchor_bottom = 0.79
+margin_left = -0.880127
+margin_top = -0.447998
+margin_right = 0.399902
+margin_bottom = -0.127991
+rect_clip_content = true
 custom_fonts/font = SubResource( 3 )
 text = "Descartes"
 __meta__ = {
