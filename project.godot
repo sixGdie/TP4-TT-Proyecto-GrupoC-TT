@@ -54,6 +54,10 @@ Globales="*res://Singletons/Globales.gd"
 DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
 Multijugador="*res://Interfaz/multijugador.gd"
 Lobby="*res://Interfaz/lobby.tscn"
+Nivel4="*res://Niveles/Nivel4.tscn"
+Nivel1="*res://Niveles/Nivel1.tscn"
+Nivel2="*res://Niveles/Nivel2.tscn"
+Nivel3="*res://Niveles/Nivel3.tscn"
 
 [display]
 

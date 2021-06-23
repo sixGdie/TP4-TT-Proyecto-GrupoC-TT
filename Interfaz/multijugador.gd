@@ -174,8 +174,17 @@ func comenzar_juego():
 	pre_inicio_juego()
 	
 func terminar_juego():
-	if has_node("/root/CajaDeArenaDartsch"):
-		get_node("/root/CajaDeArenaDartsch").queue_free()
+	#if has_node("/root/CajaDeArenaDartsch"):
+	#	get_node("/root/CajaDeArenaDartsch").queue_free()
+		
+	if has_node("/root/Nivel1"):
+		get_node("/root/Nivel1").queue_free()
+	elif has_node("/root/Nivel2"):
+		get_node("/root/Nivel2").queue_free()
+	elif has_node("/root/Nivel3"):
+		get_node("/root/Nivel3").queue_free()
+	elif has_node("/root/Nivel4"):
+		get_node("/root/Nivel4").queue_free()
 		
 	emit_signal("juego_terminado")
 	jugadores.clear()
