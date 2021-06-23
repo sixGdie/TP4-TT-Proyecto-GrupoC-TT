@@ -96,12 +96,14 @@ func morir():
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			get_tree().set_input_as_handled()
+	rpc_id(get_tree().get_rpc_sender_id(), "juego_perdido")
 	get_tree().change_scene("res://Interfaz/PantallaDerrota.tscn")
 	
 func ganar():
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			get_tree().set_input_as_handled()
+	rpc_id(get_tree().get_rpc_sender_id(), "juego_ganado")
 	get_tree().change_scene("res://Interfaz/PantallaVictoria.tscn")
 
 func obtenerLlave():

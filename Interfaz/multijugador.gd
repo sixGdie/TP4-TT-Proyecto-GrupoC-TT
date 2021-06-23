@@ -123,6 +123,12 @@ remote func cargar_mapa(num):
 remote func post_inicio_juego():
 	get_tree().set_pause(false)
 	
+remote func juego_perdido():
+	get_tree().change_scene("res://Interfaz/PantallaDerrota.tscn")
+	
+remote func juego_ganado():
+	get_tree().change_scene("res://Interfaz/PantallaVictoria.tscn")
+	
 remote func juego_listo(id):
 	assert(get_tree().is_network_server())
 	
