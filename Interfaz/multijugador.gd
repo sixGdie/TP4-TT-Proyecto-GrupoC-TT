@@ -53,7 +53,7 @@ remote func pre_inicio_juego():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	nivel = rng.randi_range(0, 3)
-	var jugador = load("res://Jugador/PrimeraPersona.tscn")
+	var jugador = load("res://Jugador/PrimeraPersona.tscn").instance()
 			
 	for j_id in jugadores:
 		print(str(j_id))
