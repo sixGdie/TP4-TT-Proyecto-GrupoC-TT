@@ -60,7 +60,7 @@ remote func pre_inicio_juego():
 		jugador.set_network_master(j_id)
 		
 	if get_tree().get_network_connected_peers().size() >= 1:
-		rpc_id(get_tree().get_network_unique_id(), "cargar_mapa", nivel)
+		rpc_id(get_tree().get_network_connected_peers()[0], "cargar_mapa", nivel)
 			
 	if not get_tree().is_network_server():
 		rpc_id(1, "juego_listo", get_tree().get_network_unique_id())
