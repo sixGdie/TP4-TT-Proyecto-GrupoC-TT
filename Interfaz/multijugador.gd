@@ -78,6 +78,10 @@ remote func pre_inicio_juego():
 #			juego = load("res://Niveles/Nivel3P2.tscn").instance()
 #		else:
 #			juego = load("res://Niveles/Nivel4P2.tscn").instance()
+
+	
+	
+	
 	if get_tree().get_network_connected_peers().size() >= 1:
 		rpc_id(get_tree().get_network_connected_peers()[0], "cargar_mapa", nivel)
 			

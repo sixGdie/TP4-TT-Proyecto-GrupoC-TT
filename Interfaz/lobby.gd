@@ -11,6 +11,7 @@ onready var boton_unirse = $"Conexion/BotonUnirse"
 onready var ventana_error = $"AcceptDialog"
 onready var lista_jugadores = $"Jugadores/ItemList"
 onready var boton_iniciar = $"Jugadores/BotonIniciar"
+onready var musica = $"AudioStreamPlayer"
 
 func _ready():
 	Multijugador.connect("conexion_fallida", self, "_conexion_fallida")
@@ -88,6 +89,7 @@ func actualizar_sala():
 	
 func _boton_iniciar_presionado():
 	Multijugador.comenzar_juego()
+	musica.stop()
 	hide()
 	
 func _boton_ip_presionado():
