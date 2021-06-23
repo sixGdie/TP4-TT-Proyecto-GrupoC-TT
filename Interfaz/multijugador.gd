@@ -127,7 +127,7 @@ remote func juego_perdido():
 	rpc_id(get_tree().get_rpc_sender_id(), "juego_perdido")
 	get_tree().change_scene("res://Interfaz/PantallaDerrota.tscn")
 	if get_tree().is_network_server():
-		juego.get_tree()
+		juego.queue_free()
 
 remote func juego_ganado():
 	rpc_id(get_tree().get_rpc_sender_id(), "juego_ganado")

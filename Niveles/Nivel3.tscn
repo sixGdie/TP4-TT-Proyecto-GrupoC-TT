@@ -350,6 +350,7 @@ pause_mode = 1
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2.219, 0 )
 script = ExtResource( 19 )
 velocidad = 8.0
+distanciaPerseguidor = 20
 
 [node name="PuntosPatrulla" type="Node" parent="EnemigoContenedor"]
 
