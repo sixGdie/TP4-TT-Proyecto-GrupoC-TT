@@ -66,9 +66,9 @@ anchor_top = 0.652
 anchor_right = 0.481
 anchor_bottom = 0.652
 margin_left = -315.05
-margin_top = -280.049
+margin_top = -220.652
 margin_right = 381.95
-margin_bottom = -184.049
+margin_bottom = -124.652
 custom_fonts/font = SubResource( 3 )
 text = "Comenzar Intento"
 __meta__ = {
@@ -76,6 +76,7 @@ __meta__ = {
 }
 
 [node name="BotonOpciones" type="Button" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0.498039 )
 anchor_left = 0.481
 anchor_top = 0.652
@@ -98,9 +99,9 @@ anchor_top = 0.652
 anchor_right = 0.481
 anchor_bottom = 0.652
 margin_left = -315.05
-margin_top = -0.169678
+margin_top = -43.2867
 margin_right = 381.95
-margin_bottom = 95.8308
+margin_bottom = 52.7137
 custom_fonts/font = SubResource( 5 )
 text = "Salir"
 __meta__ = {
@@ -109,7 +110,7 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
-volume_db = -20.194
+volume_db = -20.0
 autoplay = true
 
 [connection signal="pressed" from="ComenzarIntento" to="." method="_on_ToolButton_pressed"]

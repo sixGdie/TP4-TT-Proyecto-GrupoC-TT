@@ -50,6 +50,7 @@ text = "Atrapado para siempre"
 align = 1
 
 [node name="Comenzar" type="Button" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0.490196 )
 anchor_left = 0.481
 anchor_top = 0.652

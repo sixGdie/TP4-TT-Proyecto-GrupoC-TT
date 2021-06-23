@@ -1,6 +1,5 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Musica/Main_Menu.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Fuentes/remnant/Remnant-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Imagenes/PantallaMuerte.jpg" type="Texture" id=3]
 [ext_resource path="res://Puzzles/Puzzle_B.gd" type="Script" id=5]
@@ -135,10 +134,6 @@ text = "ALGERIA"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
-autoplay = true
 
 [node name="PISTA 2" type="TextureRect" parent="."]
 visible = false

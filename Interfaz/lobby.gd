@@ -92,5 +92,8 @@ func _boton_iniciar_presionado():
 	musica.stop()
 	hide()
 	
+func _boton_volver_presionado():
+	get_tree().change_scene("res://Interfaz/PantallaInicio.tscn")
+	
 func _boton_ip_presionado():
 	OS.shell_open("https://icanhazip.com/")
