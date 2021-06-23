@@ -41,8 +41,8 @@ __meta__ = {
 }
 
 [node name="Mapa_J2_D1" type="Sprite" parent="."]
-position = Vector2( 737.381, 541.363 )
-scale = Vector2( 1.96132, 1.6151 )
+position = Vector2( 733.438, 543.039 )
+scale = Vector2( 1.95583, 1.61008 )
 texture = ExtResource( 2 )
 
 [node name="Salir" type="Button" parent="."]
