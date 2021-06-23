@@ -97,13 +97,13 @@ remote func pre_inicio_juego():
 remote func cargar_mapa(num):
 	var juego
 	if get_tree().get_network_unique_id() == 1:
-		if num == 0:
+		if nivel == 0:
 			juego = load("res://Niveles/Nivel1.tscn").instance()
-		elif num == 1:
+		elif nivel == 1:
 			juego = load("res://Niveles/Nivel2.tscn").instance()
-		elif num == 2:
+		elif nivel == 2:
 			juego = load("res://Niveles/Nivel3.tscn").instance()
-		else:
+		elif nivel == 3:
 			juego = load("res://Niveles/Nivel4.tscn").instance()
 	elif get_tree().get_network_unique_id() != 1:
 		if num == 0:
@@ -112,7 +112,7 @@ remote func cargar_mapa(num):
 			juego = load("res://Niveles/Nivel2P2.tscn").instance()
 		elif num == 2:
 			juego = load("res://Niveles/Nivel3P2.tscn").instance()
-		else:
+		elif num == 3:
 			juego = load("res://Niveles/Nivel4P2.tscn").instance()
 			
 	print("Nivel cargado: " + str(num))
